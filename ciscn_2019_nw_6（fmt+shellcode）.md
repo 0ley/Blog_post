@@ -42,7 +42,7 @@ bss段上
 
 [https://196011564.github.io/2019/07/13/CTF-BUUCTF-Pwn%E5%88%B7%E9%A2%98%E4%B9%8B%E6%97%85-(1)/#%E5%88%A9%E7%94%A8%E6%A0%88%E5%86%85%E4%B8%A4%E4%B8%AA%E6%A0%88%E7%A9%BA%E9%97%B4%E7%9A%84%E6%8C%87%E9%92%88%E6%9D%A5%E6%94%B9%E5%86%99ret%E5%9C%B0%E5%9D%80%EF%BC%8C%E7%84%B6%E5%90%8E%E9%A1%BA%E4%BE%BF%E6%9C%80%E5%90%8E%E5%86%99%E5%85%A5shellcode%E5%88%B0bss%EF%BC%8C%E7%84%B6%E5%90%8Eret%E8%B7%B3%E8%BF%87%E5%8E%BB](https://196011564.github.io/2019/07/13/CTF-BUUCTF-Pwn刷题之旅-(1)/#利用栈内两个栈空间的指针来改写ret地址，然后顺便最后写入shellcode到bss，然后ret跳过去)
 
-```
+```py
 # -*- coding: utf-8 -*-
 from pwn import *
 context.log_level='debug'
